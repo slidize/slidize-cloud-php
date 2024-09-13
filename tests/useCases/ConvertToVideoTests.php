@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 use Slidize\Cloud\Sdk\Api\SlidizeApi;
 use Slidize\Cloud\Sdk\Models\VideoOptions;
 
-class convertToVideoTests extends TestCase
+class ConvertToVideoTests extends TestCase
 {
     public const testFile = "..\\..\\TestData\\test.pptx";
 
