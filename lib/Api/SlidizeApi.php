@@ -113,7 +113,7 @@ class SlidizeApi
         HeaderSelector $selector = null,
         $hostIndex = 0
     ) {
-        $this->client = $client ?: new Client();
+        $this->client = $client ?: new Client([ 'verify' => false ]);
         $this->config = $config ?: new Configuration();
         $this->headerSelector = $selector ?: new HeaderSelector();
         $this->hostIndex = $hostIndex;
