@@ -17,7 +17,7 @@ class ReplaceTextTests extends TestCase
         $options = new ReplaceTextOptions();
         $options->setOldValue(self::oldValue);
         $options->setNewValue(self::newValue);
-        $response = $api->replaceText($options, [self::testFile]);
+        $response = $api->replaceText([self::testFile], $options);
         $this->assertNotNull($response);
     }
 
@@ -27,7 +27,7 @@ class ReplaceTextTests extends TestCase
         $options = new ReplaceTextOptions();
         $options->setOldValue(self::oldValue);
         $options->setNewValue(self::newValue);
-        $response = $api->replaceTextWithHttpInfo($options, [self::testFile]);
+        $response = $api->replaceTextWithHttpInfo([self::testFile], $options);
         $this->assertNotNull($response);
         $this->assertNotNull($response[0]);
         $this->assertTrue($response[1] == 200);
