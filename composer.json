@@ -1,6 +1,6 @@
 {
     "name": "slidize-cloud/php-sdk",
-    "version": "24.6.0",
+    "version": "24.9.0",
     "description": "Slidize.Cloud Web API for managing PowerPoint presentations.",
     "keywords": [
         "openapitools",
